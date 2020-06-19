@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <head>
+    <title>Admin</title>
+    <style>
+h2{ text-shadow: 2px 2px 8px powderblue;
+    
+    }
+h2 { 
+      display: flex; 
+      flex-direction: row; 
+        } 
+h2:before, h2:after {
+     content: "";
+     flex: 1 1;
+     border-bottom: 1px solid #000;
+     margin: auto;
+}
+#myProgress1 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar1 {
+  width: 80%;
+  height: 10px;
+  background-color: #008080;
+}
+
+#myProgress2 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar2 {
+  width: 65%;
+  height: 10px;
+  background-color: #DC143C;
+}
+
+
+#myProgress3 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar3 {
+  width: 50%;
+  height: 10px;
+  background-color: #228B22;
+}
+
+#myProgress4 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar4 {
+  width: 55%;
+  height: 10px;
+  background-color: #191970;
+}
+
+
+
+#myProgress5 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar5 {
+  width: 45%;
+  height: 10px;
+  background-color: #2F4F4F;
+}
+
+
+#myProgress6 {
+  width: 80%;
+  background-color: #ddd;
+}
+
+#myBar6 {
+  width: 30%;
+  height: 10px;
+  background-color: red;
+}
+
+.r{ float:left;
+    display:block;
+    width:30%;
+    padding-left:30px;
+    font-size:18px;
+    border-radius:8px;
+    padding-left:20px;
+    margin-left:28px;
+    }
+.f{ float:right;
+    display:block;
+    width:33.33%;
+    pading-left:20px;
+    font-size:18px;
+    }
+.p{ float:right;
+    display:block;
+    width:30%;
+    font-size:18px;}
+body{
+  font-family:Arial;
+}
+img{ width:350px;
+     height:300px;
+     }
+a.active {
+  background-color: #008080;
+  text-decoration: none;
+  color:white;
+  font-size:18px;
+}
+#b{ font-size:18px;
+    margin-left:48px;
+    padding-left:10px;
+    display:block;
+    border:solid 0.5px;
+    height:150px;
+    width:200px;
+    border-radius:8px;
+    background-color:#FFF5EE;
+    float:left;
+    margin-bottom:15px;
+    }
+#c{ font-size:18px;
+    margin-left:48px;
+    padding-left:10px;
+    display:block;
+    border:solid 0.5px;
+    height:150px;
+    width:200px;
+    border-radius:8px;
+    background-color:LightYellow;
+    float:left;
+    margin-bottom:15px;
+}
+button{ margin:10px;}
+#c:hover{ opacity:40%;
+          border: 2px solid teal;
+}
+#b:hover{ opacity:40%;
+          border: 2px solid teal;
+}
+</style>
+  </head>
+  <body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <a href="#" class="active"><button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Home</button></a>
+  <a href="Admin_profile.html" class="w3-bar-item w3-button" style="font-size:18px;">My profile</a>
+  <a href="http://localhost/myfiles/supplydailyproducts.php" class="w3-bar-item w3-button" style="font-size:18px;">Supply daily products</a>
+  <a href="http://localhost/myfiles/supplynewproducts.php" class="w3-bar-item w3-button" style="font-size:18px;">Supply other products</a>
+  <a href="http://localhost/myfiles/emp_deets.php" class="w3-bar-item w3-button" style="font-size:18px;">Employee details</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Total Revenue</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Orders</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Progress report</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Events</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Customer Feedback</a>
+</div>
+<div id="main">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+<center><h2 ><i class='fas fa-user-shield' style:"font-size:36px;"> Admin dashboard</i></h2></center>
+<br>
+<br>
+<div id="c">
+<p>$34,545</p>
+<p>TOTAL REVENUES</p>
+<div id="myProgress1">
+  <div id="myBar1"></div>
+</div>
+80%
+</div>
+
+<div id="b">
+<p>$7800</p>
+<p>TOTAL PROFIT</p>
+<div id="myProgress2">
+  <div id="myBar2"></div>
+</div>
+65%
+</div>
+
+<div id="c"style="background-color:#E0FFFF;">
+<p>$14,000</p>
+<p>WEEKLY SALES</p>
+<div id="myProgress3">
+  <div id="myBar3"></div>
+</div>
+50%
+</div>
+
+
+<div id="c" style="background-color:#FFF8DC;">
+<p>630</p>
+<p>NEW ORDERS</p>
+<div id="myProgress4">
+  <div id="myBar4"></div>
+</div>
+55%
+</div>
+
+
+<div id="c" style="background-color:#FFEBCD;">
+<p>1550</p>
+<p>NEW FEEDBACKS</p>
+<div id="myProgress5">
+  <div id="myBar5"></div>
+</div>
+45%
+</div>
+
+<div id="c" style="background-color:#FAFAD2;">
+<p>383</p>
+<p>NEW USERS</p>
+<div id="myProgress6">
+  <div id="myBar6"></div>
+</div>
+30%
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<br>
+<div class="r">
+<b>Revenue</b>
+<br>
+<br>
+<img src="https://www.grandviewresearch.com/static/img/research/us-stainless-steel-forgings-market.png" ></img>
+</div>
+<div class="f">
+<b>Finance</b>
+<br>
+<br>
+<img src="https://www.cbcal.com/sites/default/files/images/20170512_capital-ratios.jpg" ></img>
+</div>
+<div class="p">
+<b>Stats</b>
+<br>
+<br>
+<img src="https://g.foolcdn.com/img/editorial/cash%20pie.png"></img>
+</div>
+  </body>
+</html>
