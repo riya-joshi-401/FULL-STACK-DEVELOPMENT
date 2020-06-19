@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <head>
+    <title>My account</title>
+    <style>
+h2{ text-shadow: 2px 2px 8px powderblue;
+    
+    }
+h2 { 
+      display: flex; 
+      flex-direction: row; 
+        } 
+h2:before, h2:after {
+     content: "";
+     flex: 1 1;
+     border-bottom: 1px solid #000;
+     margin: auto;
+}
+
+.r{ float:left;
+    display:block;
+    width:30%;
+    padding-left:30px;
+    font-size:18px;
+    border-radius:8px;
+    padding-left:20px;
+    margin-left:28px;
+    }
+.f{ float:right;
+    display:block;
+    width:33.33%;
+    pading-left:20px;
+    font-size:18px;
+    }
+.p{ float:right;
+    display:block;
+    width:30%;
+    font-size:18px;}
+body{
+  font-family:Arial;
+}
+img{ width:350px;
+     height:300px;
+     }
+a.active {
+  background-color: #008080;
+  text-decoration: none;
+  color:white;
+  font-size:18px;
+}
+#b{ font-size:18px;
+    margin-left:48px;
+    padding-left:10px;
+    display:block;
+    border:solid 0.5px;
+    height:150px;
+    width:200px;
+    border-radius:8px;
+    background-color:#FFF5EE;
+    float:left;
+    margin-bottom:15px;
+    }
+#c{ font-size:18px;
+    margin-left:48px;
+    padding-left:10px;
+    display:block;
+    border:solid 0.5px;
+    height:150px;
+    width:200px;
+    border-radius:8px;
+    background-color:LightYellow;
+    float:left;
+    margin-bottom:15px;
+}
+button{ margin:10px;}
+#c:hover{ opacity:40%;
+          border: 2px solid teal;
+}
+#b:hover{ opacity:40%;
+          border: 2px solid teal;
+}
+</style>
+  </head>
+  <body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <a href="#" class="active"><button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Home</button></a>
+  <a href="user_profile.html" class="w3-bar-item w3-button" style="font-size:18px;">My profile</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">My orders</a>
+  <a href="#" class="w3-bar-item w3-button" style="font-size:18px;">Account settings</a>
+</div>
+<div id="main">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+</div>
+<center><h2 > My account</h2></center>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<br>
+  </body>
+</html>
