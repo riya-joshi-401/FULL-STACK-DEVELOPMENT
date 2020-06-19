@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+  font-family:Arial;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin:100px;
+  margin-left:165px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<center><h1>Meet The Team</h1></center>
+<br>
+<hr>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://previews.123rf.com/images/juliatim/juliatim1406/juliatim140600029/29460912-business-woman-is-wearing-black-suit-isolated-on-white-.jpg" alt="Riya" style="width:100%;height:400px;">
+      <div class="container">
+        <h2>Riya Joshi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Hello! This is Riya Joshi , CEO & Founder of Riya Steels.</p>
+        <p>riya.joshi@somaiya.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://us.123rf.com/450wm/kakigori/kakigori1702/kakigori170200067/72364493-stock-vector-beautiful-young-brunette-businesswoman-holding-folder-with-documents.jpg?ver=6" alt="Labdhi" style="width:100%;height:400px;">
+      <div class="container">
+        <h2>Labdhi Jain</h2>
+        <p class="title">Founder</p>
+        <p>Hello! This is Labdhi Jain , Founder of Riya Steels.</p>
+        <p>labdhi.jain@somaiya.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+</body>
+</html>
