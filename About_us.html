@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+#right{ float:right;
+        display:block;
+        width:55%;
+        font-family:Arial;
+        font-size:18px;
+        }
+#left{ float:left;
+       display:block;
+       width:45%;}
+img{ width:650px;
+     height:700px;}
+h1,span {
+  text-shadow: 0 0 3px #FF0000;
+}
+#Button{
+        border: solid orange 1px;
+        border-radius: 25px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        background-color: orange;
+        font-size:20px;
+        font-family:Arial;
+        bottom:0;
+      }
+
+      #Button a:link{
+        text-decoration: none;
+        display: block;
+      }
+      #Button:hover{
+        color: black;
+      }
+</style>
+</head>
+<title>About us</title>
+<body style="background-color:#fffcdc;">
+<div id="right">
+<h1> About us </h1>
+<p>Established in 1968, <span>RIYA Steel Industries Ltd.</span> is one of the leading manufacturers of 
+Structural Steel in western part of Maharashtra (India).<br>
+<br>
+RIYA Steel's product portfolio includes Angles, Channels, I Beams, Flats, Serrated flats, RSJ Poles Rounds and Squares to match 
+diverse industrial and agricultural demands. We excel as a reputed manufacturing unit of all types of MS products and specialize in customized development as well.<br>
+<br>
+RIYA Steel has its manufacturing unit in Yawat, Pune. The Plant has 2 rolling mills with a Fully Mechanized Material Handling 
+System with 22 EOT cranes and 2 Hydra mobile cranes.<br>
+<br>
+At RIYA Steel,total customer satisfaction is our top priority. Our company implements a rigorous inspection and 
+testing process to make sure our customers receive a product that matches the highest standards of quality and consistency. To ensure this we have a 
+full-fledged in house chemical and physical testing laboratory with latest Spectrometer and fully trained and dedicated quality assurance team. 
+Structural Steel manufactured by us is in conformance to IS 2062 Grade A. We are also an ISO 9001:2008 certified company.
+<br>
+<br>
+<br>
+</p>
+</div>
+<div id="left">
+<img class="mySlides"src="https://geography-revision.co.uk/wp-content/uploads/2019/05/Some-Major-Manufacturing-Industries_2.jpg"></img>
+<img class="mySlides"src="https://www.study365.co.uk/wp-content/uploads/2017/08/shutterstock_626818859-1-1.jpg"></img>
+<img class="mySlides"src="https://www.investors.com/wp-content/uploads/2017/02/SMT0130_steel_021317_adobe.jpg"></img>
+<img class="mySlides"src="https://www.akssteel.in/wp-content/uploads/2017/12/steel-manufacturing.jpg"></img>
+<img class="mySlides"src="https://blogs.opentext.com/wp-content/uploads/shutterstock_341900147_steel_mill_worker.jpg"></img>
+<img class="mySlides"src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/08/01/08/china-steel.gif"></img>
+<img class="mySlides"src="https://www.hadimpro.com/uploads/markets/11/normal/lifting-hoisting-technical-authority---01.jpg"></img>
+<img class="mySlides"src="https://businessdayghana.com/wp-content/uploads/2018/02/Steel-Industry_-696x456.jpg"></img>
+<img class="mySlides"src="https://amp.thenational.ae/image/policy:1.157292:1499293904/image/jpeg.jpg?f=16x9&w=1200&$p$f$w=dfa40e8"></img>
+
+</div>
+<center>
+<a href="team.html" id="Button" role="button" style="text-decoration: none; ">Meet our Team</a>
+</center>
+ <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>
