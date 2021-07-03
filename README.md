@@ -4,5 +4,4 @@
 System keeping in mind the needs of a steel manufacturing company.<br>
 • <ins>Technologies used:</ins> HTML5, CSS3, Javascript, Bootstrap, PHP, MySQL
 
-Please find the screenshots in the "  Project snapshots " folder.
 
